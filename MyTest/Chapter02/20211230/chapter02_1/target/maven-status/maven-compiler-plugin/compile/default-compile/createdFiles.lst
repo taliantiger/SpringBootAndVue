@@ -1,0 +1,5 @@
+myproject\App.class
+myproject\Book.class
+META-INF\spring-configuration-metadata.json
+myproject\BookController.class
+myproject\HelloController.class

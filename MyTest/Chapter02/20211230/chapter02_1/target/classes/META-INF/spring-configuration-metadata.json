@@ -1,0 +1,27 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "myproject.Book",
+      "name": "book",
+      "type": "myproject.Book"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "myproject.Book",
+      "name": "book.author",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "myproject.Book",
+      "name": "book.name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "myproject.Book",
+      "name": "book.price",
+      "type": "java.lang.Float"
+    }
+  ]
+}
