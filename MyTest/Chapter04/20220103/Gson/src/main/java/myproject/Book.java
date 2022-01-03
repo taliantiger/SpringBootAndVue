@@ -13,7 +13,7 @@ public class Book {
     @JsonIgnore
     private Float price;
 
-    @JsonFormat(pattern = "yyyy-MM-dd")
+    @JsonFormat(pattern = "yyyy-mm-dd")
     private Date publicationDate;
 
 

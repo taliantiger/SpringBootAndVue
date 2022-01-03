@@ -13,6 +13,8 @@ public class Book {
     @JsonIgnore
     private Float price;
 
+//    需要严格按照  yyyy-MM-dd 的小写大写小写的顺序格式。
+//    月份"MM"记得一定要大写，不然会导致月份数字大于12而出错
     @JsonFormat(pattern = "yyyy-MM-dd")
     private Date publicationDate;
 
