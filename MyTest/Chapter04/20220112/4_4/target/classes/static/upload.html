@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!-- The word --- "arction" is a Wrong Spelling,
+ could cause problem: "Request method 'POST' not supported" -->
+<!--    <form arction="/upload" method="post" enctype="multipart/form-data">-->
+
+
+    <form action="/upload" method="post" enctype="multipart/form-data">
+<!--        type 属性为 "file" 的样式，是由系统默认配置的-->
+<!--        要修改样式，需要自己再自定义一个 input、css和 Js  -->
+        <input type="file" name="uploadFile" value="please choose file">
+
+        <input type="submit" value="upload">
+    </form>
+
+</body>
+</html>
