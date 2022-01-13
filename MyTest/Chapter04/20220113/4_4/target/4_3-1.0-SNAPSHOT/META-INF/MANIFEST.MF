@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: 4_3
+Implementation-Version: 1.0-SNAPSHOT
+Built-By: Talian
+Implementation-Vendor-Id: org.sang
+Created-By: Apache Maven 3.8.2
+Build-Jdk: 1.8.0_181
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/4_3
+
