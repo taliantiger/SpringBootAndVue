@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.6.0.js"></script>
+</head>
+<body>
+    <div id="contentDiv"></div>
+    <div id="deleteResult"></div>
+    <input type="button" value="提交数据" onclick="getData()"> <br>
+    <input type="button" value="删除数据" onclick="deleteData()"> <br>
+    <script>
+        function getData(){
+            $.ajax({
+                /**
+                 *
+                 URI :  {URN  、 URL}
+
+                 有的时候我们还有可能遇到下面这种地址：
+                 http://www.baidu.com/folder/
+                    这个 URI 以一个 / 结尾，表示 folder 是一个目录，我们要访问的是这个目录下的文件，
+                 但是又没有说明是这个目录下的哪个文件，此时依然是采用该目录下 index.html 或者 default.html 一类的文件。
+
+
+                 有的时候，我们还可以看到下面这种 URI：
+                 http://www.baidu.com/folder
+                    即 folder 后面没有 /，此时会先将 folder 当作一个资源去访问(比如一个名为 folder 的 Servlet )，
+                 如果没有名为 folder 的资源，那么浏览器会自动在 folder 后面加上一个 / ，
+                 此时地址变为 http://www.baidu.com/folder/ ，folder 是一个目录，
+                 然后就会去尝试访问 folder 目录下的 index.html 或者 default.html。
+                    注意这种自动调整只在浏览器中存在，如果你的项目是一个手机 App 或者你是一个 Ajax 请求，
+                 则不会有这种调整，即没写 / 就当做具体资源来对待，如果该资源不存在，就会报 404 ，
+                 写了/ 就当目录来对待。（OkHtpp3中是这样）
+
+                 */
+
+                /**
+                 * 因此，此处的  /book/  代表 book 是一个目录，而不是一个资源
+                 * 少了  /  ，会导致Ajax请求中   @PostMapping('/book')  method  失效,报404
+                 */
+
+                // url:'http://localhost:8080/book',
+                url:'http://localhost:8080/book/',
+
+                type:'post',
+                data:{name:'三国演义'},
+                success:function (msg){
+                    $("#contentDiv").html(msg);
+                }
+            })
+        }
+
+        function deleteData(){
+            $.ajax({
+                url:'http://localhost:8080/book/99',
+                type:'delete',
+                success:function(msg){
+                    $("#deleteResult").html(msg);
+                }
+            })
+        }
+    </script>
+</body>
+</html>
