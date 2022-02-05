@@ -1,0 +1,15 @@
+CREATE DATABASE `jpa` DEFAULT CHARACTER SET utf8;
+
+USE `jpa`;
+
+## 运行App.class后，t_book 表格会自动生存
+
+
+INSERT INTO `t_book`(`id`,`author`,`book_name`,`price`) 
+	VALUES(1,"罗贯中", "三国演义",30),
+	       (2,"曹雪芹","红楼梦", 35),
+	       (3, "吴承恩", "西游记", 29),
+	       (4, "施耐庵", "水浒传", 29),
+	       (5,"钱钟书", "宋词选注",33),
+	       (6,"鲁迅","朝花夕拾", 18),
+	       (7, "鲁迅", "故事新编", 22);
