@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<!-- BookMapper.class  和 BookMapper.xml 的命名空间一定要匹配
+    不能一个为BookMapper.class, 另一个为BookMapper1.xml;
+    否则报错Invalid bound statement (not found): ==》 无效绑定语句-->
+<mapper namespace="org.sang.mapper1.BookMapper">
+<select id="getAllBooks" resultType="org.sang.model.Book">
+    select * from book
+</select>
+
+</mapper>
