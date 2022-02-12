@@ -1,0 +1,27 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "org.sang.config.RedisConfig",
+      "name": "spring.redis.cluster",
+      "type": "org.sang.config.RedisConfig"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "org.sang.config.RedisConfig",
+      "name": "spring.redis.cluster.host",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "org.sang.config.RedisConfig",
+      "name": "spring.redis.cluster.pool-config",
+      "type": "redis.clients.jedis.JedisPoolConfig"
+    },
+    {
+      "sourceType": "org.sang.config.RedisConfig",
+      "name": "spring.redis.cluster.ports",
+      "type": "java.util.List<java.lang.Integer>"
+    }
+  ]
+}
