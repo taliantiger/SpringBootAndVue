@@ -1,0 +1,7 @@
+org\sang\service\UserService.class
+org\sang\model\Role.class
+org\sang\controller\HelloController.class
+org\sang\mapper\UserMapper.class
+org\sang\App.class
+org\sang\config\WebSecurityConfig.class
+org\sang\model\User.class
