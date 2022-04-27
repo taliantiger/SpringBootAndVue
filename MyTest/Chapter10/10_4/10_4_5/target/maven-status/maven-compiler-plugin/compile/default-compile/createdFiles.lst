@@ -1,0 +1,4 @@
+org\talian\App.class
+org\talian\config\AuthorizationServerConfig.class
+org\talian\config\ResourceServerConfig.class
+org\talian\config\WebSecurityConfig.class
