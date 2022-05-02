@@ -1,0 +1,6 @@
+org\talian\controller\GreetingController.class
+org\talian\App.class
+org\talian\config\WebSecurityConfig.class
+org\talian\model\Chat.class
+org\talian\model\Message.class
+org\talian\config\WebSocketMessageBroker.class
