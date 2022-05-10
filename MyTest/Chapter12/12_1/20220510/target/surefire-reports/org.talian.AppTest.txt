@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: org.talian.AppTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 45.593 s <<< FAILURE! - in org.talian.AppTest
+contextLoads(org.talian.AppTest)  Time elapsed: 21.141 s  <<< ERROR!
+org.springframework.messaging.MessagingException: Uncategorized exception occurred during JMS processing; nested exception is javax.jms.JMSException: Could not connect to broker URL: tcp://108.61.86.84:61616. Reason: java.net.ConnectException: Connection timed out: connect; nested exception is org.springframework.jms.UncategorizedJmsException: Uncategorized exception occurred during JMS processing; nested exception is javax.jms.JMSException: Could not connect to broker URL: tcp://108.61.86.84:61616. Reason: java.net.ConnectException: Connection timed out: connect
+	at org.talian.AppTest.contextLoads(AppTest.java:25)
+Caused by: org.springframework.jms.UncategorizedJmsException: Uncategorized exception occurred during JMS processing; nested exception is javax.jms.JMSException: Could not connect to broker URL: tcp://108.61.86.84:61616. Reason: java.net.ConnectException: Connection timed out: connect
+	at org.talian.AppTest.contextLoads(AppTest.java:25)
+Caused by: javax.jms.JMSException: Could not connect to broker URL: tcp://108.61.86.84:61616. Reason: java.net.ConnectException: Connection timed out: connect
+	at org.talian.AppTest.contextLoads(AppTest.java:25)
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at org.talian.AppTest.contextLoads(AppTest.java:25)
+
