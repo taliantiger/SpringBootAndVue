@@ -1,0 +1,3 @@
+org\talian\config\RabbitDirectConfig.class
+org\talian\App.class
+org\talian\DirectReceiver.class
