@@ -1,0 +1,8 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Datasource local storage ignored files
+/../../../../../../../../../../../../:\DataSave\IDEATest\Java\SpringBootAndVue\书籍作者提供的源码\作者GitHub提供的源码\20201217\vhr-760d8fa4026260c7f61b347b4b3a308c311ea74d\vhr-760d8fa4026260c7f61b347b4b3a308c311ea74d\vhr\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/

@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: org.javaboy.vhr.VhrApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 11.134 s <<< FAILURE! - in org.javaboy.vhr.VhrApplicationTests
+contextLoads  Time elapsed: 0.006 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Found non-empty schema(s) `vhr` but no schema history table. Use baseline() or set baselineOnMigrate to true to initialize the schema history table.
+Caused by: org.flywaydb.core.api.FlywayException: Found non-empty schema(s) `vhr` but no schema history table. Use baseline() or set baselineOnMigrate to true to initialize the schema history table.
+
